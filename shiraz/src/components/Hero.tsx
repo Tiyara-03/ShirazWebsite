@@ -15,7 +15,7 @@ const menuItems: Items[] = [
 
     {
         id: 3,
-        image: "/images/Mfood3.jpeg", title: "غذای خاورمیانه‌ای و مدیترانه‌ای"
+        image: "/images/food1.jpeg", title: "غذای خاورمیانه‌ای و مدیترانه‌ای"
     }
 ]
 
@@ -35,8 +35,8 @@ const Hero = () => {
         </section>
 
         {/* Items Section */}
-        <section className='bg-[#f0f0e3] mt-20 bg-cover bg-center relative'>
-            <div className='w-full p-8 flex flex-col justify-center items-center relative z-10'>
+        <section className='bg-[#c9b58a] mt-10 bg-cover bg-center relative'>
+            <div className='w-full md:p-8 py-8  flex flex-col justify-center items-center relative z-10'>
                 <div className='mt-10'>
                     <h1 className='font-playfair font-extrabold text-5xl bg-clip-text text-transparent bg-gradient-to-b  from-green-900 to-red-900'>Our Special For You</h1>
                 </div>

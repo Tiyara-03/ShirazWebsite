@@ -1,12 +1,12 @@
-import Aboutus from "@/components/Aboutus";
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 
 
 export default function Home() {
   return (
-    <div className="bg-[#f0f0e3]">   {/* */}
+    <div className="bg-[#c9b58a]">   {/* flex flex-col gap-20*/}
       <Hero/>
-      <Aboutus/>
+      <About/>
     </div>
   );
 }

@@ -59,8 +59,8 @@ export default function Splashscreen({ finishloading }: Splashscreenprops) {
     return (
         <>
             <div id='bgImage'
-                style={{ backgroundImage: "url('/images/splash.jpeg')" }}
-                className="bg-cover bg-center bg-no-repeat ">
+                style={{ backgroundImage: "url('/images/bgpattern.jpg')" }}
+                className="bg-cover bg-center bg-no-repeat bg-[#c9b58a]">
                 <div className="w-full h-screen flex flex-row justify-center items-center">
                     <img id='logo' src="/images/logo.png" alt="N/A" className="w-[10rem] h-auto lg:w-[20rem]" />
                 </div>

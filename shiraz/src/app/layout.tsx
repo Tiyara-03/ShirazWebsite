@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Splashscreen from "@/components/Splashscreen";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Footer from "@/components/Footer";
 
 
 const geistSans = Geist({
@@ -32,15 +33,16 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         data-new-gr-c-s-check-loaded="14.1223.0"
         data-gr-ext-installed="">
         {isloading && isHome ? (
-          <Splashscreen finishloading={() => setIsLoading(false)}/>
+          <Splashscreen finishloading={() => setIsLoading(false)}/> //..
         ) : (
           <>
-          <Navbar />
+          <Navbar />          
           {children}
+          <Footer/>
           </>        
        )}
 

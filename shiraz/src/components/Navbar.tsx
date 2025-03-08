@@ -55,17 +55,17 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="w-full xl:px-8 mx-auto bg-[#e6dfcf]"> {/*bg-[#e6dfcf] */}
+            <div className="w-full xl:px-8 mx-auto bg-[#c9b58a]"> {/*bg-[#e6dfcf] */}
                 <div className="flex flex-row justify-between items-center">
                     {/* Logo */}
                     <div className=" w-full flex flex-col justify-start items-start md:flex-row gap-0 md:gap-4">
-                        <div className="flex flex-row gap-3 md:gap-8 p-2">
+                        <div className="flex flex-row gap-3 md:gap-8 px-2 md:p-2">
                             {flags1.map((item) => (
                                 <img key={item.id} src={item.img} alt="N/a" className="w-[4rem] h-auto rounded-2xl" />
                             ))}
                         </div>
 
-                        <div className="flex flex-row gap-3 md:gap-8 p-2">
+                        <div className="flex flex-row gap-3 md:gap-8 px-2 md:p-2">
                             {flags2.map((item) => (
                                 <img key={item.id} src={item.img} alt="N/a" className="w-[4rem] md:w-[4rem] h-auto rounded-2xl" />
                             ))}
@@ -75,14 +75,14 @@ export default function Navbar() {
 
                     {/* Links */}
                     <div className="hidden md:flex md:flex-row flex-col gap-10 lg:px-10  lg:mr-10">
-                        <Link href={"#"} className="px-3 py-1 w-[8rem] bg-[#4c714d] rounded-xl font-tajwal font-semibold flex justify-center items-center">Menu Items</Link>
-                        <Link href={"#"} className="px-3 py-1 w-[8rem] bg-[#e16e5a] rounded-xl font-tajwal font-semibold flex justify-center items-center">About Us</Link>
+                        <Link href={"#"} className="px-3 py-2 w-[8rem] bg-[#375838] rounded-xl font-tajwal font-semibold flex justify-center items-center">Menu Items</Link>
+                        <Link href={"/About"} className="px-3 py-2 w-[8rem] bg-[#d42a2b] rounded-xl font-tajwal font-semibold flex justify-center items-center">About Us</Link>
                     </div>
 
                     {/* Mobile Menu */}
                     <div className="flex md:hidden justify-end">
                         <button onClick={toggleMenu} className="text-[#5d3625]">
-                            <i className="ri-menu-line text-4xl"></i>
+                            <i className="ri-menu-line text-4xl font-extrabold"></i>
                         </button>
                     </div>
                 </div>
